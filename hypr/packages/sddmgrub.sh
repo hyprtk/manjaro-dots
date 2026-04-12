@@ -11,8 +11,9 @@ echo ""
 sudo rm -rf /usr/share/grub/themes/*
 sudo rm -rf /boot/grub/themes/*
 echo ""
-sudo cp ~/manjaro-dots/sddm/sddm.conf /etc/sddm.conf.d/
-echo "File /etc/sddm.conf.d/sddm.conf updated."
+sudo cp $HOME/manjaro-dots/sddm/sddm.conf /etc/sddm.conf.d/
+sudo cp $HOME/manjaro-dots/sddm/sddm.conf /etc/
+echo "File /etc/sddm.conf updated."
 echo ""
 cp ~/manjaro-dots/default.png ~/.cache/current-wallpaper.png
 echo ""
