@@ -8,7 +8,7 @@ echo " You will now be asked to enter your Root password to proceed with the ins
 echo""
 sleep 2
 sudo pacman -S figlet --noconfirm
-sudo cp ~/dotfiles/figlet/fonts/* /usr/share/figlet/fonts/
+sudo cp ~/manjaro-dots/figlet/fonts/* /usr/share/figlet/fonts/
 figlet -f 3d "Install"
 echo "
 
@@ -50,7 +50,7 @@ echo ""
 source $(dirname "$0")/scripts/library.sh
 echo ""
 echo ""
-sh ~/dotfiles/scripts/set-timezone.sh
+sh ~/manjaro-dots/scripts/set-timezone.sh
 echo ""
 sleep 2
 clear
@@ -80,7 +80,7 @@ else
     git clone https://aur.archlinux.org/yay-git.git ~/Downloads/yay-git
     cd ~/Downloads/yay-git
     makepkg -si
-    cd ~/dotfiles/
+    cd ~/manjaro-dots/
     clear
 fi
 echo ""
@@ -112,7 +112,7 @@ echo ""
 sleep 2
 echo ""
 clear
-sh ~/dotfiles/hypr/packages/graphics-card.sh
+sh ~/manjaro-dots/hypr/packages/graphics-card.sh
 sleep 2
 clear
 while true; do
@@ -140,63 +140,63 @@ echo "
 "
 
 echo ""
-sh ~/dotfiles/hypr/packages/hyprland.sh
+sh ~/manjaro-dots/hypr/packages/hyprland.sh
 echo ""
 sleep 2
 echo ""
-sh ~/dotfiles/hypr/packages/xfce4.sh
+sh ~/manjaro-dots/hypr/packages/xfce4.sh
 echo ""
 sleep 2
 echo ""
-sh ~/dotfiles/hypr/packages/filetools.sh
+sh ~/manjaro-dots/hypr/packages/filetools.sh
 echo ""
 sleep 2
 echo ""
-sh ~/dotfiles/hypr/packages/webtools.sh
+sh ~/manjaro-dots/hypr/packages/webtools.sh
 echo ""
 sleep 2
 echo ""
-sh ~/dotfiles/hypr/packages/printers.sh
+sh ~/manjaro-dots/hypr/packages/printers.sh
 echo ""
 sleep 2
 echo ""
-sh ~/dotfiles/hypr/packages/network.sh
+sh ~/manjaro-dots/hypr/packages/network.sh
 echo ""
 sleep 2
 echo ""
-sh ~/dotfiles/hypr/packages/media.sh
+sh ~/manjaro-dots/hypr/packages/media.sh
 echo ""
 sleep 2
 echo ""
-sh ~/dotfiles/hypr/packages/terminaltools.sh
+sh ~/manjaro-dots/hypr/packages/terminaltools.sh
 echo ""
 sleep 2
 echo ""
-sh ~/dotfiles/hypr/packages/systemtools.sh
+sh ~/manjaro-dots/hypr/packages/systemtools.sh
 echo ""
 sleep 2
 echo ""
-sh ~/dotfiles/hypr/packages/system.sh
+sh ~/manjaro-dots/hypr/packages/system.sh
 echo ""
 sleep 2
 echo ""
-sh ~/dotfiles/hypr/packages/hyprviz.sh
+sh ~/manjaro-dots/hypr/packages/hyprviz.sh
 echo ""
 sleep 2
 echo ""
-sh ~/dotfiles/hypr/packages/sddm-check.sh
+sh ~/manjaro-dots/hypr/packages/sddm-check.sh
 echo ""
 sleep 2
 echo ""
-sh ~/dotfiles/hypr/packages/sddmgrub.sh
+sh ~/manjaro-dots/hypr/packages/sddmgrub.sh
 echo ""
 sleep 2
 echo ""
-sh ~/dotfiles/hypr/packages/matuwall.sh
+sh ~/manjaro-dots/hypr/packages/matuwall.sh
 echo ""
 sleep 2
 echo ""
-sh ~/dotfiles/scripts/awww-wrapper.sh
+sh ~/manjaro-dots/scripts/awww-wrapper.sh
 echo ""
 echo "
 #########################################################
@@ -239,7 +239,7 @@ echo "
 "
 echo ""
 echo ""
-sh ~/dotfiles/hypr/packages/wallpapers.sh
+sh ~/manjaro-dots/hypr/packages/wallpapers.sh
 echo ""
 sleep 2
 echo "
@@ -260,7 +260,7 @@ echo "
 "
 echo ""
 echo ""
-sh ~/dotfiles/hypr/packages/fonts.sh
+sh ~/manjaro-dots/hypr/packages/fonts.sh
 echo ""
 sleep 2
 echo "
@@ -303,12 +303,12 @@ echo "
 "
 echo ""
 echo "-> Init pywal16"
-wal -i ~/dotfiles/Wallpapers/default.png
+wal -i ~/manjaro-dots/Wallpapers/default.png
 echo "pywal16 initiated."
 echo ""
 echo ""
 echo "-> Copy default wallpaper to .cache"
-cp ~/dotfiles/Wallpapers/default.png ~/.cache/current-wallpaper.png
+cp ~/manjaro-dots/Wallpapers/default.png ~/.cache/current-wallpaper.png
 sudo cp ~/.cache/current-wallpaper.png /root/.cache/current-wallpaper.png
 echo "default wallpaper copied."
 echo ""
@@ -380,7 +380,7 @@ echo "
 #                                                       #
 #########################################################
 "
-sudo cp ~/dotfiles/User-Management/manage-users.desktop /usr/share/applications/
+sudo cp ~/manjaro-dots/User-Management/manage-users.desktop /usr/share/applications/
 sudo systemctl enable --now cockpit.socket
 sudo systemctl start cockpit.socket
 echo ""
@@ -393,7 +393,7 @@ echo "
 #                                                       #
 #########################################################
 "
-sudo cp ~/dotfiles/smb/smb.conf /etc/samba/
+sudo cp ~/manjaro-dots/smb/smb.conf /etc/samba/
 sudo systemctl enable smb nmb
 sudo systemctl start smb nmb
 sudo systemctl restart smb nmb
@@ -410,17 +410,17 @@ echo "
 echo ""
 echo ""
 echo "If you installed an NVIDIA Graphics Card please follow the instructions in the"
-echo "nvidia.conf file located ~/dotfiles/hypr/conf/nvidia.conf"
+echo "nvidia.conf file located ~/manjaro-dots/hypr/conf/nvidia.conf"
 echo ""
 sleep 5
 clear
-figlet -f 3d "dotfiles"
+figlet -f 3d "manjaro-dots"
 echo ""
 echo " by hyprtk (Kori Tk) (2026) "
 echo " ------------------------------------------------------------------- "
 echo ""
 echo "The script will ask for permission to remove existing directories and files from ~/.config/"
-echo "Symbolic links will then be created from ~/dotfiles into your ~/.config/ directory."
+echo "Symbolic links will then be created from ~/manjaro-dots into your ~/.config/ directory."
 echo "But you can decide to keep your personal versions by answering with No (Nn)."
 echo ""
 sleep 5
@@ -477,19 +477,19 @@ echo "
 echo ""
 echo ""
 echo "-------------------------------------"
-echo "-> Install general dotfiles"
+echo "-> Install general manjaro-dots"
 echo "-------------------------------------"
 echo ""
 echo ""
-_installSymLink alacritty ~/.config/alacritty ~/dotfiles/alacritty/ ~/.config
-_installSymLink ranger ~/.config/ranger ~/dotfiles/ranger/ ~/.config
-_installSymLink vim ~/.config/vim ~/dotfiles/vim/ ~/.config
-_installSymLink nvim ~/.config/nvim ~/dotfiles/nvim/ ~/.config
-_installSymLink starship ~/.config/starship.toml ~/dotfiles/starship/starship.toml ~/.config/starship.toml
-_installSymLink rofi ~/.config/rofi ~/dotfiles/rofi/ ~/.config
-_installSymLink dunst ~/.config/dunst ~/dotfiles/dunst/ ~/.config
-_installSymLink wal ~/.config/wal ~/dotfiles/wal/ ~/.config
-_installSymLink btop ~/.config/btop ~/dotfiles/btop/ ~/.config
+_installSymLink alacritty ~/.config/alacritty ~/manjaro-dots/alacritty/ ~/.config
+_installSymLink ranger ~/.config/ranger ~/manjaro-dots/ranger/ ~/.config
+_installSymLink vim ~/.config/vim ~/manjaro-dots/vim/ ~/.config
+_installSymLink nvim ~/.config/nvim ~/manjaro-dots/nvim/ ~/.config
+_installSymLink starship ~/.config/starship.toml ~/manjaro-dots/starship/starship.toml ~/.config/starship.toml
+_installSymLink rofi ~/.config/rofi ~/manjaro-dots/rofi/ ~/.config
+_installSymLink dunst ~/.config/dunst ~/manjaro-dots/dunst/ ~/.config
+_installSymLink wal ~/.config/wal ~/manjaro-dots/wal/ ~/.config
+_installSymLink btop ~/.config/btop ~/manjaro-dots/btop/ ~/.config
 echo ""
 clear
 echo "
@@ -500,7 +500,7 @@ echo "
 #########################################################
 "
 echo ""
-wal -i ~/dotfiles/Wallpapers/default.png
+wal -i ~/manjaro-dots/Wallpapers/default.png
 echo "Pywal16 templates initiated!"
 echo ""
 echo ""
@@ -514,39 +514,39 @@ echo "
 echo ""
 clear
 echo "-------------------------------------"
-echo "-> Install GTK dotfiles"
+echo "-> Install GTK manjaro-dots"
 echo "-------------------------------------"
 echo ""
-_installSymLink gtk-3.0 ~/.config/gtk-3.0 ~/dotfiles/gtk/gtk-3.0/ ~/.config/
-_installSymLink gtk-4.0 ~/.config/gtk-4.0 ~/dotfiles/gtk/gtk-4.0/ ~/.config/
-_installSymLink themes ~/.local/share/themes ~/dotfiles/themes ~/.local/share/
-_installSymLink icons ~/.local/share/icons ~/dotfiles/papirus-icons/icons ~/.local/share/
-echo ""
-clear
-echo "-------------------------------------"
-echo "-> Install Xfce dotfiles"
-echo "-------------------------------------"
-echo ""
-_installSymLink xfce4 ~/.config/xfce4 ~/dotfiles/xfce4 ~/.config/
-_installSymLink Thunar ~/.config/Thunar ~/dotfiles/Thunar ~/.config/
-_installSymLink Mousepad ~/.config/Mousepad ~/dotfiles/Mousepad ~/.config/
+_installSymLink gtk-3.0 ~/.config/gtk-3.0 ~/manjaro-dots/gtk/gtk-3.0/ ~/.config/
+_installSymLink gtk-4.0 ~/.config/gtk-4.0 ~/manjaro-dots/gtk/gtk-4.0/ ~/.config/
+_installSymLink themes ~/.local/share/themes ~/manjaro-dots/themes ~/.local/share/
+_installSymLink icons ~/.local/share/icons ~/manjaro-dots/papirus-icons/icons ~/.local/share/
 echo ""
 clear
 echo "-------------------------------------"
-echo "-> Install Hyprland dotfiles"
+echo "-> Install Xfce manjaro-dots"
 echo "-------------------------------------"
 echo ""
-_installSymLink hypr ~/.config/hypr ~/dotfiles/hypr/ ~/.config
-_installSymLink fastfetch ~/.config/fastfetch ~/dotfiles/fastfetch/ ~/.config
-_installSymLink waybar ~/.config/waybar ~/dotfiles/waybar/ ~/.config
-_installSymLink swaylock ~/.config/swaylock ~/dotfiles/swaylock/ ~/.config
-_installSymLink swappy ~/.config/swappy ~/dotfiles/swappy/ ~/.config
-_installSymLink hyprlogout ~/.config/hyprlogout ~/dotfiles/hyprlogout/ ~/.config
-_installSymLink waypaper ~/.config/waypaper ~/dotfiles/waypaper/ ~/.config
-_installSymLink zshrc ~/.config/zshrc ~/dotfiles/zshrc/ ~/.config
-_installSymLink ohmyposh ~/.config/ohmyposh ~/dotfiles/ohmyposh/ ~/.config
-_installSymLink matuwall ~/.config/matuwall ~/dotfiles/matuwall/ ~/.config
-_installSymLink wob ~/.config/wob ~/dotfiles/wob/ ~/.config
+_installSymLink xfce4 ~/.config/xfce4 ~/manjaro-dots/xfce4 ~/.config/
+_installSymLink Thunar ~/.config/Thunar ~/manjaro-dots/Thunar ~/.config/
+_installSymLink Mousepad ~/.config/Mousepad ~/manjaro-dots/Mousepad ~/.config/
+echo ""
+clear
+echo "-------------------------------------"
+echo "-> Install Hyprland manjaro-dots"
+echo "-------------------------------------"
+echo ""
+_installSymLink hypr ~/.config/hypr ~/manjaro-dots/hypr/ ~/.config
+_installSymLink fastfetch ~/.config/fastfetch ~/manjaro-dots/fastfetch/ ~/.config
+_installSymLink waybar ~/.config/waybar ~/manjaro-dots/waybar/ ~/.config
+_installSymLink swaylock ~/.config/swaylock ~/manjaro-dots/swaylock/ ~/.config
+_installSymLink swappy ~/.config/swappy ~/manjaro-dots/swappy/ ~/.config
+_installSymLink hyprlogout ~/.config/hyprlogout ~/manjaro-dots/hyprlogout/ ~/.config
+_installSymLink waypaper ~/.config/waypaper ~/manjaro-dots/waypaper/ ~/.config
+_installSymLink zshrc ~/.config/zshrc ~/manjaro-dots/zshrc/ ~/.config
+_installSymLink ohmyposh ~/.config/ohmyposh ~/manjaro-dots/ohmyposh/ ~/.config
+_installSymLink matuwall ~/.config/matuwall ~/manjaro-dots/matuwall/ ~/.config
+_installSymLink wob ~/.config/wob ~/manjaro-dots/wob/ ~/.config
 mkdir ~/.local/bin
 echo ""
 clear
@@ -578,7 +578,7 @@ echo "
 echo ""
 echo "-> Install .zshrc"
 echo ""
-_installSymLink .zshrc ~/.zshrc ~/dotfiles/.zshrc ~/.zshrc
+_installSymLink .zshrc ~/.zshrc ~/manjaro-dots/.zshrc ~/.zshrc
 echo ""
 sudo chsh -s /bin/zsh
 chsh -s /bin/zsh
@@ -590,8 +590,8 @@ echo "
 #########################################################
 "
 echo ""
-_installSymLink standalone ~/.local/bin ~/dotfiles/standalone/ ~/.local/bin
-_installSymLink oh-my-zsh ~/.oh-my-zsh/oh-my-zsh.sh ~/dotfiles/oh-my-zsh/oh-my-zsh.sh ~/.oh-my-zsh
+_installSymLink standalone ~/.local/bin ~/manjaro-dots/standalone/ ~/.local/bin
+_installSymLink oh-my-zsh ~/.oh-my-zsh/oh-my-zsh.sh ~/manjaro-dots/oh-my-zsh/oh-my-zsh.sh ~/.oh-my-zsh
 echo ""
 clear
 echo ""
@@ -600,7 +600,7 @@ echo "-------------------------------------"
 echo "-> Setup Root User Config"
 echo "-------------------------------------"
 echo ""
-sudo cp -r ~/dotfiles/root /
+sudo cp -r ~/manjaro-dots/root /
 echo " Copying Config and Themes to ROOT User "
 echo ""
 sleep 3
@@ -617,6 +617,6 @@ echo "-------------------------------------"
 echo ""
 echo "DONE!"
 echo ""
-echo "NEXT: Update the keyboard layout and screen resolution in ~/dotfiles/hypr/hyprland.conf"
+echo "NEXT: Update the keyboard layout and screen resolution in ~/manjaro-dots/hypr/hyprland.conf"
 echo "Now proceed with rebooting your system and Enjoy!!!"
 echo ""

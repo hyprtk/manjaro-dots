@@ -3,7 +3,7 @@
 # NVIDIA Users
 
 if you are using an NVIDIA GPU or a laptop with NVIDIA GPU,
-please read the ~/dotfiles/hypr/conf/nvidia.conf for setup and configuration of your GPU
+please read the ~/manjaro-dots/hypr/conf/nvidia.conf for setup and configuration of your GPU
 
 # AMDGPU Users
 
@@ -60,11 +60,11 @@ screen recordings are saved by default to your ~/videos/Recordings directory
   - Follow the github - https://github.com/hyprwm/Hyprland
 
 # user githubs
-  - https://github.com/mylinuxforwork/dotfiles
+  - https://github.com/mylinuxforwork/manjaro-dots
   - https://github.com/JaKooLit/Hyprland-Dots
   - https://github.com/eldermf/bspwm-hyprland
-  - https://github.com/lauroro/hyprland-dotfiles
-  - https://github.com/eneshecan/dotfiles
+  - https://github.com/lauroro/hyprland-manjaro-dots
+  - https://github.com/eneshecan/manjaro-dots
 
 # share your own files on github 
   - so we can all learn

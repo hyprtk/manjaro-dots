@@ -23,13 +23,13 @@ alias pf='pfetch'
 alias ls='exa -al'
 alias shutdown='systemctl poweroff'
 alias v='nvim'
-alias ts='~/dotfiles/scripts/snapshot.sh'
+alias ts='~/manjaro-dots/scripts/snapshot.sh'
 alias matrix='cmatrix'
 alias wifi='nmtui'
 alias od='~/private/onedrive.sh'
-alias rw='~/dotfiles/waybar/reload.sh'
+alias rw='~/manjaro-dots/waybar/reload.sh'
 alias winclass="xprop | grep 'CLASS'"
-alias dot="cd ~/dotfiles"
+alias dot="cd ~/manjaro-dots"
 
 # -----------------------------------------------------
 # Window Managers
@@ -54,18 +54,18 @@ alias gcheck="git checkout"
 # SCRIPTS
 # -----------------------------------------------------
 
-alias wallp='~/dotfiles/scripts/updatewal.sh'
-alias gr='python ~/dotfiles/scripts/growthrate.py'
+alias wallp='~/manjaro-dots/scripts/updatewal.sh'
+alias gr='python ~/manjaro-dots/scripts/growthrate.py'
 alias ChatGPT='python ~/mychatgpt/mychatgpt.py'
 alias chat='python ~/mychatgpt/mychatgpt.py'
-alias ascii='~/dotfiles/scripts/figlet.sh'
+alias ascii='~/manjaro-dots/scripts/figlet.sh'
 
 # -----------------------------------------------------
 # VIRTUAL MACHINE
 # -----------------------------------------------------
 
 alias vm='~/private/launchvm.sh'
-alias lg='~/dotfiles/scripts/looking-glass.sh'
+alias lg='~/manjaro-dots/scripts/looking-glass.sh'
 alias vmstart='virsh --connect qemu:///system start win11'
 alias vmstop='virsh --connect qemu:///system destroy win11'
 
@@ -73,9 +73,9 @@ alias vmstop='virsh --connect qemu:///system destroy win11'
 # EDIT CONFIG FILES
 # -----------------------------------------------------
 
-alias confq='nvim ~/dotfiles/qtile/config.py'
-alias confp='nvim ~/dotfiles/picom/picom.conf'
-alias confb='nvim ~/dotfiles/.bashrc'
+alias confq='nvim ~/manjaro-dots/qtile/config.py'
+alias confp='nvim ~/manjaro-dots/picom/picom.conf'
+alias confb='nvim ~/manjaro-dots/.bashrc'
 
 # -----------------------------------------------------
 # EDIT NOTES
@@ -87,7 +87,7 @@ alias notes='vim ~/notes.txt'
 # SYSTEM
 # -----------------------------------------------------
 
-alias update-grub='~/dotfiles/scripts/update-grub.sh'
+alias update-grub='~/manjaro-dots/scripts/update-grub.sh'
 alias setkb='setxkbmap gb;echo "Keyboard set back to gb."'
 alias update='sudo pacman -Syu --noconfirm && yay -Syu --noconfirm'
 

@@ -4,8 +4,8 @@
 
 wal -q -i ~/Pictures/Wallpapers/ 
 
-killall waybar 2>/dev/null; ~/dotfiles/waybar/launch.sh
+killall waybar 2>/dev/null; ~/manjaro-dots/waybar/launch.sh
 
-~/dotfiles/papirus-icons/scripts/change-icons.sh
+~/manjaro-dots/papirus-icons/scripts/change-icons.sh
 
 exit
