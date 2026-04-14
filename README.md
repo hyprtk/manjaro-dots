@@ -37,10 +37,9 @@ Hyprland: In addition, you can switch the Waybar Template with SUPER + CTRL + T 
 ## Screenshots & Video
 
 Manjaro
-![Model](https://github.com/hyprtk/manjaro-dots/blob/main/screenshots/screenshot-20231020-194152.png)
-![Model](https://github.com/hyprtk/manjaro-dots/blob/main/screenshots/screenshot-20231020-194408.png)
-![Model](https://github.com/hyprtk/manjaro-dots/blob/main/screenshots/screenshot-20231020-194623.png)
-![Model](https://github.com/hyprtk/manjaro-dots/blob/main/screenshots/screenshot-20231020-194651.png)
+![Model](https://github.com/hyprtk/manjaro-dots/blob/main/screenshots/screenshot-2026-04-14_13-26-36.png)
+![Model](https://github.com/hyprtk/manjaro-dots/blob/main/screenshots/screenshot-2026-04-14_13-25-01.png)
+![Model](https://github.com/hyprtk/manjaro-dots/blob/main/screenshots/screenshot-2026-04-14_13-26-22.png)
 
 
 ## Getting started
