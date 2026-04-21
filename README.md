@@ -75,7 +75,7 @@ PLEASE BACKUP YOUR EXISTING .config WITH YOUR DOTFILES BEFORE STARTING THE SCRIP
 ```
 # Make sure that you're in your home directory
 
-git clone https://raw.githubusercontent.com/hyprtk/manjaro-dots/install.sh
+git clone https://raw.githubusercontent.com/hyprtk/manjaro-dots
 cd manjaro-dots
 ./install.sh
 
