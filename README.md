@@ -54,6 +54,7 @@ Manjaro
 ![Model](https://github.com/hyprtk/manjaro-dots/blob/main/screenshots/screenshot-2026-04-21_15-01-24.png)
 
 Arch Linux
+![MODEL](https://github.com/hyprtk/manjaro-dots/blob/main/screenshots/screenshot-2026-04-21_13-04-59.png)
 ![Model](https://github.com/hyprtk/manjaro-dots/blob/main/screenshots/screenshot-2026-04-21_13-02-05.png)
 ![Model](https://github.com/hyprtk/manjaro-dots/blob/main/screenshots/screenshot-2026-04-21_13-04-49.png)
 
