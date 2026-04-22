@@ -60,7 +60,7 @@ Arch Linux
 
 Endeavour
 ![Model](https://github.com/hyprtk/manjaro-dots/blob/main/screenshots/screenshot-2026-04-22_11-16-25.png)
-![Model](https://github.com/hyprtk/manharo-dots/blob/main/screenshots/screenshot-2026-04-22_11-16-47.png)
+![Model](https://github.com/hyprtk/manjaro-dots/blob/main/screenshots/screenshot-2026-04-22_11-16-47.png)
 ![MODEL](https://github.com/hyprtk/manjaro-dots/blob/main/screenshots/screenshot-2026-04-22_11-17-59.png)
 
 Garuda
