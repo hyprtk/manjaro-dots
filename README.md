@@ -59,8 +59,9 @@ Arch Linux
 ![Model](https://github.com/hyprtk/manjaro-dots/blob/main/screenshots/screenshot-2026-04-21_13-04-49.png)
 
 Garuda
-![Model](https://github.com/hyprtk/manjaro-dots/blob/main/screenshots/screenshot-2026-04-13_10-37-05.png)
-![Model](https://github.com/hyprtk/manjaro-dots/blob/main/screenshots/screenshot-2026-04-13_10-42-20.png)
+![Model](https://github.com/hyprtk/manjaro-dots/blob/main/screenshots/screenshot-2026-04-22_09-43-27.png)
+![Model](https://github.com/hyprtk/manjaro-dots/blob/main/screenshots/screenshot-2026-04-22_09-42-03.png)
+![MODEL](https://github.com/hyprtk/manjaro-dots/blob/main/screenshots/screenshot-2026-04-22_09-43-12.png)
 
 ArcoLinux - No Longer producing Install ISO's (I am not removing the screenshots though)
 ![Model](https://github.com/hyprtk/manjaro-dots/blob/main/screenshots/53256162013_6be4b66963_o.png)
