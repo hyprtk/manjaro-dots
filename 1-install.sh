@@ -593,6 +593,7 @@ echo ""
 _installSymLink standalone ~/.local/bin ~/manjaro-dots/standalone/ ~/.local/bin
 _installSymLink oh-my-zsh ~/.oh-my-zsh/oh-my-zsh.sh ~/manjaro-dots/oh-my-zsh/oh-my-zsh.sh ~/.oh-my-zsh
 echo ""
+rm -R $HOME/dotfiles
 clear
 echo ""
 echo ""
