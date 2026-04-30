@@ -381,7 +381,7 @@ echo "
 #                                                       #
 #########################################################
 "
-sudo cp ~/kiro-dots/os-release/os-release /usr/lib/
+sudo cp ~/manjaro-dots/os-release/os-release /usr/lib/
 sudo cp ~/manjaro-dots/User-Management/manage-users.desktop /usr/share/applications/
 sudo systemctl enable --now cockpit.socket
 sudo systemctl start cockpit.socket
